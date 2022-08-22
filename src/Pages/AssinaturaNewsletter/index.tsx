@@ -1,4 +1,4 @@
-import styles from './Home.module.sass'
+import styles from './AssinaturaNewsletter.module.sass'
 
 export default function Home () {
 	return (
