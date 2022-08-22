@@ -1,17 +1,56 @@
-import { ReactComponent as Logo } from 'assets/logo.svg'
-import styles from './Cabecalho.module.sass'
+import  logo  from 'assets/logo.svg'
+import logoSmall from 'assets/logo-sm.svg'
+import styled from 'styled-components'
+
+const Logo = styled.img`
+	display: none;
+
+	@media screen and (min-width: 1024px), (max-width: 728px){
+		display: block
+	}
+`
+
+const LogoSmall = styled.img`
+	display: block;
+
+	@media screen and (min-width: 1024px), (max-width: 728px){
+		display: none
+	}
+`
+
+const Cabecalho = styled.nav`
+	background-color: transparent;
+	display: flex;
+	justify-content: space-around;
+	margin: 1em 0;
+	align-items: center;
+	
+`
+
+const Navegacao = styled.ul`
+	display: flex;
+  padding: 0;
+
+	a {
+		color: #202020;
+    line-height: 20px;
+    font-weight: 600;
+    margin: 0 1em;
+	}
+`
 
 export default function Menu() {
 	return (
-		<nav className={styles.menu}>
-			<Logo />
-			<ul className={styles.navegacao}>
-				<li><a href="#" className={styles.navegacao__link}>Como fazer</a>/</li>
-				<li><a href="#" className={styles.navegacao__link}>Ofertas</a>/</li>
-				<li><a href="#" className={styles.navegacao__link}>Depoimentos</a>/</li>
-				<li><a href="#" className={styles.navegacao__link}>Vídeos</a>/</li>
-				<li><a href="#" className={styles.navegacao__link}>Meu Carrinho</a></li>
-			</ul>
-		</nav>
+		<Cabecalho>
+			<Logo src={logo} alt="Logo da Casa Verde" />
+			<LogoSmall src={logoSmall} alt="Logo da Casa Verde" />
+			<Navegacao>
+				<li><a href="#">Como fazer</a>/</li>
+				<li><a href="#">Ofertas</a>/</li>
+				<li><a href="#">Depoimentos</a>/</li>
+				<li><a href="#">Vídeos</a>/</li>
+				<li><a href="#">Meu Carrinho</a></li>
+			</Navegacao>
+		</Cabecalho>
 	)
 }
