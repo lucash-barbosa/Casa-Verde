@@ -6,14 +6,10 @@ export default function Menu() {
 		<nav className={styles.menu}>
 			<Logo />
 			<ul className={styles.navegacao}>
-				<li><a href="#" className={styles.navegacao__link}>Como fazer</a></li>
-				<li className={styles.navegacao__item}>/</li>
-				<li><a href="#" className={styles.navegacao__link}>Ofertas</a></li>
-				<li className={styles.navegacao__item}>/</li>
-				<li><a href="#" className={styles.navegacao__link}>Depoimentos</a></li>
-				<li className={styles.navegacao__item}>/</li>
-				<li><a href="#" className={styles.navegacao__link}>Vídeos</a></li>
-				<li className={styles.navegacao__item}>/</li>
+				<li><a href="#" className={styles.navegacao__link}>Como fazer</a>/</li>
+				<li><a href="#" className={styles.navegacao__link}>Ofertas</a>/</li>
+				<li><a href="#" className={styles.navegacao__link}>Depoimentos</a>/</li>
+				<li><a href="#" className={styles.navegacao__link}>Vídeos</a>/</li>
 				<li><a href="#" className={styles.navegacao__link}>Meu Carrinho</a></li>
 			</ul>
 		</nav>
