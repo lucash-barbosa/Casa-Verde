@@ -1,11 +1,13 @@
+import Home from 'Pages/Home'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Cabecalho from './components/Cabecalho'
+import Menu from './components/Cabecalho'
 
-function App () {
+function App() {
 	return (
 		<Router>
+			<Menu />
 			<Routes>
-				<Route path='/' element={<Cabecalho />} />
+				<Route index element={<Home />} />
 			</Routes>
 		</Router>
 	)

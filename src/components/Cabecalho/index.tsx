@@ -1,20 +1,20 @@
 import { ReactComponent as Logo } from 'assets/logo.svg'
 import styles from './Cabecalho.module.sass'
 
-export default function Cabecalho() {
+export default function Menu() {
 	return (
-		<nav className={styles.cabecalho}>
+		<nav className={styles.menu}>
 			<Logo />
 			<ul className={styles.navegacao}>
 				<li><a href="#" className={styles.navegacao__link}>Como fazer</a></li>
 				<li className={styles.navegacao__item}>/</li>
-				<li><a href="#" className={styles.navegacao__link}></a>Ofertas</li>
+				<li><a href="#" className={styles.navegacao__link}>Ofertas</a></li>
 				<li className={styles.navegacao__item}>/</li>
-				<li><a href="#" className={styles.navegacao__link}></a>Depoimentos</li>
+				<li><a href="#" className={styles.navegacao__link}>Depoimentos</a></li>
 				<li className={styles.navegacao__item}>/</li>
-				<li><a href="#" className={styles.navegacao__link}></a>Vídeos</li>
+				<li><a href="#" className={styles.navegacao__link}>Vídeos</a></li>
 				<li className={styles.navegacao__item}>/</li>
-				<li><a href="#" className={styles.navegacao__link}></a>Meu Carrinho</li>
+				<li><a href="#" className={styles.navegacao__link}>Meu Carrinho</a></li>
 			</ul>
 		</nav>
 	)
