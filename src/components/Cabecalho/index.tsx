@@ -7,7 +7,7 @@ const Logo = styled.img`
   margin: 1em auto;
   width: 60vw;
 
-  @media screen and (max-width: 768px), (min-width: 1024px){
+  @media screen and (max-width: 767px), (min-width: 1024px){
     display: block;
   }
 
@@ -21,7 +21,7 @@ const Logo = styled.img`
 const LogoSmall = styled.img`
   display: block;
 
-  @media screen and (max-width: 768px), (min-width: 1024px){
+  @media screen and (max-width: 767px), (min-width: 1024px){
     display: none;
   }
 `
