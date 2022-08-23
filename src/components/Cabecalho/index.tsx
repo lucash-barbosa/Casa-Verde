@@ -79,8 +79,3 @@ export default function Menu() {
 		</Cabecalho>
 	)
 }
-/*
-@media screen and (min-width: 768px){
-	display: flex;
-}
-*/
