@@ -59,7 +59,7 @@ export const Paragrafo = styled.p`
 	}
 `
 
-export const AssinaturaWrapper = styled.div`
+export const AssinaturaWrapper = styled.form`
 	display: flex;
 	flex-wrap: wrap;
 	gap: 10px;
