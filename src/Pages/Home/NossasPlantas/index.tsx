@@ -3,7 +3,7 @@ import { Ofertas } from 'interfaces/ofertas'
 import { useEffect, useState } from 'react'
 import { Botao, Container, ContainerOfertas, FigureImg, Icone, NomePlanta, Preco, Wrapper } from './styled'
 
-export default function ofertas () {
+export default function NossasPlantas () {
 
 	const [oferta, setOferta] = useState<Ofertas[]>([])
 
@@ -20,8 +20,8 @@ export default function ofertas () {
 
 	return (
 		<ContainerOfertas>
-			<Titulo>Conheça nossas</Titulo>
-			<Subtitulo>ofertas</Subtitulo>
+			<Titulo>Conheça as</Titulo>
+			<Subtitulo>nossas plantas</Subtitulo>
 			<Container>
 				{oferta.map((ofertas,index) => {
 					const img = `/assets/${ofertas.img}.png`

@@ -1,7 +1,7 @@
 import GlobalFonts from 'globalStyles/globalStyles'
 import AssinaturaNewsletter from './AssinaturaNewsletter'
 import ComoFazer from './ComoFazer'
-import Ofertas from './Ofertas'
+import NossasPlantas from './NossasPlantas'
 
 export default function Home () {
 	return (
@@ -9,7 +9,7 @@ export default function Home () {
 			<GlobalFonts />
 			<AssinaturaNewsletter />
 			<ComoFazer />
-			<Ofertas />
+			<NossasPlantas />
 		</>
 	)
 }
