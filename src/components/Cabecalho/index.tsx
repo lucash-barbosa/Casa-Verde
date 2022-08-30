@@ -15,7 +15,7 @@ export default function Menu() {
 					<a href="#">Como fazer</a>/
 				</li>
 				<li>
-					<a href="#">Ofertas</a>/
+					<a href="#">Nossas Plantas</a>/
 				</li>
 				<li>
 					<a href="#">Depoimentos</a>/
