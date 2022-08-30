@@ -1,4 +1,5 @@
-import AssinaturaNewsletter from 'Pages/AssinaturaNewsletter'
+import NotFoundPage from 'components/404'
+import Home from 'Pages/Home/'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Menu from './components/Cabecalho'
 
@@ -7,7 +8,8 @@ function App() {
 		<Router>
 			<Menu />
 			<Routes>
-				<Route index element={<AssinaturaNewsletter />} />
+				<Route index element={<Home />} />
+				<Route path='/*' element={<NotFoundPage />} />
 			</Routes>
 		</Router>
 	)

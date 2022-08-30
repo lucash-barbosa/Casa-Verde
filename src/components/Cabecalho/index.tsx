@@ -1,12 +1,15 @@
 import logo from 'assets/logo.svg'
 import logoSmall from 'assets/logo-sm.svg'
 import {Cabecalho, Logo, LogoSmall, Navegacao} from './styled'
+import { Link } from 'react-router-dom'
 
 export default function Menu() {
 	return (
 		<Cabecalho>
-			<Logo src={logo} alt="Logo da Casa Verde" />
-			<LogoSmall src={logoSmall} alt="Logo da Casa Verde" />
+			<Link to='/'>
+				<Logo src={logo} alt="Logo da Casa Verde" />
+				<LogoSmall src={logoSmall} alt="Logo da Casa Verde" />
+			</Link>
 			<Navegacao>
 				<li>
 					<a href="#">Como fazer</a>/
