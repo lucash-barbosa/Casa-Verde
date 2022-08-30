@@ -2,15 +2,14 @@ import React, { useState } from 'react'
 import {
 	AssinaturaNewsLetterWrapper,
 	ConteudoWrapper,
-	Titulo,
-	Subtitulo,
 	Paragrafo,
 	AssinaturaWrapper,
 } from './styled'
-import GlobalFonts from 'fonts/fonts'
 import emailjs from '@emailjs/browser'
+import { Subtitulo, Titulo } from 'globalStyles/globalStyles'
 
 export default function AssinaturaNewsletter() {
+	
 	const [value, setValue] = useState('')
 
 	function enviaEmail (evento: React.FormEvent<HTMLFormElement>) {
@@ -24,14 +23,13 @@ export default function AssinaturaNewsletter() {
 			emailjs.sendForm(ServiceId, templateId, evento.currentTarget, PublicKey) 
 				.then(() => {
 					console.log('mensagem enviada com susseso!')
-				}, (erro) => {
-					console.log(erro)
-				})
+				}) 
+				.catch (erro => 
+					console.log(erro))
 		}
 	}
-	
 
-	const handleChange = (evento: React.FormEvent<HTMLFormElement>) => {
+	const verificaEmail = (evento: React.FormEvent<HTMLFormElement>) => {
 		evento.preventDefault()
 		
 		const regExp = /^[a-z0-9.]+@[a-z0-9]+[mail]+.[a-z]+.?([a-z]+)?$/i
@@ -43,21 +41,20 @@ export default function AssinaturaNewsletter() {
 			alert(`O email ${value} não é valido`)
 		}
 	}
-	
+
 	return (
 		<AssinaturaNewsLetterWrapper>
-			<GlobalFonts />
 			<ConteudoWrapper>
 				<Titulo>Sua casa com as</Titulo>
 				<Subtitulo>melhores plantas</Subtitulo>
 
 				<Paragrafo>
-          Encontre aqui uma vasta seleção de plantas para decorar a sua casa e
-          torná-lo uma pessoa mais feliz no seu dia a dia. Entre com seu e-mail
-          e assine nossa newsletter para saber das novidades da marca.
+						Encontre aqui uma vasta seleção de plantas para decorar a sua casa e
+						torná-lo uma pessoa mais feliz no seu dia a dia. Entre com seu e-mail
+						e assine nossa newsletter para saber das novidades da marca.
 				</Paragrafo>
 
-				<AssinaturaWrapper onSubmit={handleChange}>
+				<AssinaturaWrapper onSubmit={verificaEmail}>
 					<input
 						name="email"
 						type="email"

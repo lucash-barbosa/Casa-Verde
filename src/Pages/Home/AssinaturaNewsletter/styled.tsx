@@ -10,12 +10,12 @@ export const AssinaturaNewsLetterWrapper = styled.section`
 		margin-left: 20%;
 		background-image: url(${plata1});
 		background-repeat: no-repeat;
-		background-position: 70% -50px;
+		background-position: 70% 0;
 		background-size: contain;
 	}
 
-	@media screen and (min-width: 1200px){
-		background-position: 50% -50px;
+	@media screen and (min-width: 1500px){
+		background-position: 50% 0;
 	}
 `
 
@@ -27,23 +27,6 @@ export const ConteudoWrapper = styled.div`
 		margin-left: 5%; 
 		text-align: left;
 		width: min-content;
-	}
-`
-
-export const Titulo = styled.h2`
-	font-size: 22px;
-  color: rgba(32, 32, 32, .5);
-`
-
-export const Subtitulo = styled.h3`
-	font-family: Elsie Swash Caps;
-	font-size: 41px;
-	font-weight: 900;
-	margin: .25em 0;
-
-	@media screen and (min-width: 768px) {
-		font-size: 82px;
-		
 	}
 `
 
