@@ -63,37 +63,43 @@ export default function NossasPlantas () {
 			<Titulo>Conheça as</Titulo>
 			<Subtitulo>nossas plantas</Subtitulo>
 			<Filtros>
-				<input id='ordenarNome' type="checkbox" onChange={() => {
-					setCheckNome(!checkNome)
-					handleChekNome()
-				}}/>
-				<label htmlFor='ordenarNome'>Ordenar nome<span></span></label>
-				
-				<input id='ordenarPreco' type="checkbox" onChange={() => {
-					setCheckPreco(!checkPreco)
-					handleChekPreco()
-				}}/>
-				<label htmlFor='ordenarPreco'>Ordenar preço<span></span></label>
+				<div>
+					<input id='ordenarNome' type="checkbox" onChange={() => {
+						setCheckNome(!checkNome)
+						handleChekNome()
+					}}/>
+					<label htmlFor='ordenarNome'>Ordenar nome<span></span></label>
+					
+					<input id='ordenarPreco' type="checkbox" onChange={() => {
+						setCheckPreco(!checkPreco)
+						handleChekPreco()
+					}}/>
+					<label htmlFor='ordenarPreco'>Ordenar preço<span></span></label>
+				</div>
 
 				<SelecionaPreco>
-					<input 
-						type="number" 
-						onChange={(value) => {
-							setMinValue(parseFloat(value.target.value).toFixed(2))
-						}} 
-						value={minValue} 
-					/> 
-					<label htmlFor="precoMin">Preço min</label>
+					<div>
+						<input 
+							type="number" 
+							onChange={(value) => {
+								setMinValue(parseFloat(value.target.value).toFixed(2))
+							}} 
+							value={minValue} 
+						/> 
+						<label htmlFor="precoMin">Preço min</label>
+					</div>
 
-					<input 
-						type="number" 
-						id='precoMax'
-						onChange={(value) => {
-							setMaxValue(parseFloat(value.target.value).toFixed(2))
-						}} 
-						value={maxValue}
-					/> 
-					<label htmlFor="precoMax">Preço max</label>
+					<div>
+						<input 
+							type="number" 
+							id='precoMax'
+							onChange={(value) => {
+								setMaxValue(parseFloat(value.target.value).toFixed(2))
+							}} 
+							value={maxValue}
+						/> 
+						<label htmlFor="precoMax">Preço max</label>
+					</div>
 
 					<button onClick={filtraPreco} >Filtrar</button>
 				</SelecionaPreco>

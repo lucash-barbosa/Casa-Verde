@@ -11,50 +11,106 @@ export const ContainerOfertas = styled.div`
 export const Filtros = styled.div`
   margin: 0 auto;
   display: flex;
+  flex-direction: column;
+  gap: 1em;
   justify-content: center;
   align-items: center;
   height: fit-content;
 
-  input {
-    display: none;
-  }
-  input:checked + label > span {
-    background-image: url(${setaParaCima});
+  @media screen and (min-width: 1024px) {
+    flex-direction: row;
+    gap: 0;
   }
 
-  label {
-    color: #202020;
-    margin: 0 1em;
-    cursor: pointer;
+  div {
+    display: flex;
+    flex-direction: column;
 
-    span {
-      background-image: url(${setaParaBaixo});
-      background-size: cover;
-      padding: .1px 8px;
-      margin-left: .5em;
+    @media screen and (min-width: 375px) {
+      flex-direction: row;
     }
+
+    input {
+      display: none;
+    }
+    input:checked + label > span {
+      background-image: url(${setaParaCima});
+    }
+  
+    label {
+      color: #202020;
+      margin: .5em 1em;
+      cursor: pointer;
+  
+      span {
+        background-image: url(${setaParaBaixo});
+        background-size: cover;
+        padding: .1px 8px;
+        margin-left: .5em;
+      }
+  }
   }
 `
 
 export const SelecionaPreco = styled.form`
-  input {
-    display: inline-block;
-    width: 10rem;
-    border: 0;
-    border-bottom: .5px solid #202020;
-    color: #202020;
-    padding: 7px 1em;
-    margin: 0 -5em 0 1em;
-    border: solid .1px #202020;
-    background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  @media screen and (min-width: 480px) {
+    flex-direction: row;
   }
 
-  label {
-    font-size: .9em;
+  div {
+    display: inline-block;
+
+    input {
+      display: inline-block;
+      width: 80vw;
+      border: 0;
+      border-bottom: .5px solid #202020;
+      color: #202020;
+      padding: 7px 1em;
+      margin: 0 -4em 1em 1em;
+      border: solid .1px #202020;
+      border-radius: 5px;
+      background: transparent;
+
+      @media screen and (min-width: 480px) {
+        width: 10rem;
+        margin-bottom: 0;
+      }
+    }
+
+    label {
+      width: max-content;
+      font-size: .9em;
+      background-color: #fff;
+      position: relative;
+      padding: 0 .1em;
+      margin: 0;
+      height: fit-content;
+      top: -18px;
+      left: -180px;
+
+      @media screen and (min-width: 480px) {
+        left: -85px;
+      }
+    }
+  }
+
+  button {
+    border: none;
     background-color: #fff;
-    position: relative;
-    top: -18px;
-    left: -85px;
+    color: #202020;
+    padding: .7em 1em;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #FFCB47;
+    color: #fff;
   }
 `
 
