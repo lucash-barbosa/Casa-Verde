@@ -10,24 +10,51 @@ export const ContainerOfertas = styled.div`
 
 export const Filtros = styled.div`
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
 
   input {
     display: none;
   }
   input:checked + label > span {
-    background-image: url(${setaParaBaixo});
+    background-image: url(${setaParaCima});
   }
 
   label {
     color: #202020;
+    margin: 0 1em;
     cursor: pointer;
 
     span {
-      background-image: url(${setaParaCima});
+      background-image: url(${setaParaBaixo});
       background-size: cover;
       padding: .1px 8px;
       margin-left: .5em;
     }
+  }
+`
+
+export const SelecionaPreco = styled.form`
+  input {
+    display: inline-block;
+    width: 10rem;
+    border: 0;
+    border-bottom: .5px solid #202020;
+    color: #202020;
+    padding: 7px 1em;
+    margin: 0 -5em 0 1em;
+    border: solid .1px #202020;
+    background: transparent;
+  }
+
+  label {
+    font-size: .9em;
+    background-color: #fff;
+    position: relative;
+    top: -18px;
+    left: -85px;
   }
 `
 
