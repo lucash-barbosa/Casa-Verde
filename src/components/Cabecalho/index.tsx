@@ -12,10 +12,10 @@ export default function Menu() {
 			</Link>
 			<Navegacao>
 				<li>
-					<a href="#">Como fazer</a>/
+					<a href="#comoConseguir">Como fazer</a>/
 				</li>
 				<li>
-					<a href="#">Nossas Plantas</a>/
+					<a href="#nossasPlantas">Nossas Plantas</a>/
 				</li>
 				<li>
 					<a href="#">Depoimentos</a>/
