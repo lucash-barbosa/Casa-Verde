@@ -3,7 +3,7 @@ import { Container, FigureContainer, Icone,  Item,  Paragrafo, Subtitulo, Titulo
 
 export default function ComoFazer() {
 	return (
-		<Container>
+		<Container id='comoConseguir'>
 			<FigureContainer>
 				<img src={planta2} alt="Imagem de planta" />
 			</FigureContainer>

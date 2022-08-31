@@ -1,9 +1,34 @@
 import styled from 'styled-components'
 import seta from 'assets/seta.svg'
+import setaParaCima from 'assets/setaUp.png'
+import setaParaBaixo from 'assets/setaDown.png'
 
 export const ContainerOfertas = styled.div`
   text-align: center;
   padding: 3rem 0;
+`
+
+export const Filtros = styled.div`
+  margin: 0 auto;
+
+  input {
+    display: none;
+  }
+  input:checked + label > span {
+    background-image: url(${setaParaBaixo});
+  }
+
+  label {
+    color: #202020;
+    cursor: pointer;
+
+    span {
+      background-image: url(${setaParaCima});
+      background-size: cover;
+      padding: .1px 8px;
+      margin-left: .5em;
+    }
+  }
 `
 
 export const Container = styled.div`

@@ -1,7 +1,7 @@
 import { Subtitulo, Titulo } from 'globalStyles/globalStyles'
 import { Ofertas } from 'interfaces/ofertas'
 import { useEffect, useState } from 'react'
-import { Botao, Container, ContainerOfertas, FigureImg, Icone, NomePlanta, Preco, Wrapper } from './styled'
+import { Botao, Container, ContainerOfertas, FigureImg, Filtros, Icone, NomePlanta, Preco, Wrapper } from './styled'
 
 export default function NossasPlantas () {
 
@@ -19,9 +19,13 @@ export default function NossasPlantas () {
 	}, [])
 
 	return (
-		<ContainerOfertas>
+		<ContainerOfertas id='nossasPlantas'>
 			<Titulo>Conheça as</Titulo>
 			<Subtitulo>nossas plantas</Subtitulo>
+			<Filtros>
+				<input id='ordenar' type="checkbox" />
+				<label htmlFor='ordenar'>Ordenar<span></span></label>
+			</Filtros>
 			<Container>
 				{oferta.map((ofertas,index) => {
 					const img = `/assets/${ofertas.img}.png`
