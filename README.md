@@ -12,7 +12,7 @@ e tem funcionalidades como filtro, ordenar por, envio de email para o usuário, 
 </div>
 
 ## 📁 Acesso
-É possivel baixar o projeto nesse <a href="https://github.com/lucash-barbosa/casa-verde/archive/refs/heads/master.zip">link</a>
+É possivel baixar o projeto nesse <a href="https://github.com/lucash-barbosa/Casa-Verde/archive/refs/heads/master.zip">link</a>
 ou acessar o <a href="https://casa-verde-tau.vercel.app">site</a>
 
 ## 🛠️ Abrir e rodar o projeto
