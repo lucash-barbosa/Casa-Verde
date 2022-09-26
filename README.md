@@ -12,7 +12,7 @@
 
 <br>
 
-![]([screencapture.png#vitrinedev](https://github.com/lucash-barbosa/Casa-Verde/blob/master/screencapture.png))
+![](https://github.com/lucash-barbosa/Casa-Verde/blob/master/screencapture.png)
 
 ## Técnologias Utilizadas
 - `React`
